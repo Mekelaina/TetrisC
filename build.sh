@@ -1,3 +1,3 @@
 #!/usr/bin/bash
 
-gcc -Wall -Wextra -o tetrisc src/*.c
+gcc -Wall -Wextra -I/lib/raylib -o tetrisc src/*.c -L/lib/raylib -lraylib -lm
