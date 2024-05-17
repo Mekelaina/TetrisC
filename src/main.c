@@ -1,13 +1,9 @@
 #include <stdio.h>
 #include <raylib.h>
+#include "render_util.h"
 
 
-const Color bgColor = {
-    .r = 54,
-    .g = 55,
-    .b = 55,
-    .a = 255
-};
+
 
 int main(){
     printf("Hello, World!\n");
@@ -19,6 +15,7 @@ int main(){
 
         ClearBackground(bgColor);
 
+        TetrisDrawPlayfield();
         EndDrawing();
     }
 
