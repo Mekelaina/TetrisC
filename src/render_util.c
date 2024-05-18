@@ -1,10 +1,10 @@
 #include "render_util.h"
+#include "game_grid.h"
 
 const size_t SCREEN_WIDTH =  640;
 const size_t SCREEN_HEIGHT = 480;
 const size_t CELLSIZE = 20;
-const size_t GRID_ROWS = 20;
-const size_t GRID_COLS = 10;
+
 const size_t GRID_WIDTH = (GRID_COLS * CELLSIZE);
 const size_t GRID_HEIGHT = (GRID_ROWS * CELLSIZE);
 const size_t GAME_WIDTH = GRID_WIDTH + (2*CELLSIZE);
@@ -33,6 +33,6 @@ void TetrisDrawNextShape(){
 void TetrisDrawUI(){
 
 }
-void TetrisDrawTetramino(CurrentTetramino *t){
+void TetrisDrawTetramino(Tetramino_t *t){
     uint16_t block = getTetraminoData(t);
 }

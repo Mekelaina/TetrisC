@@ -13,7 +13,14 @@ typedef enum {
     Z
 } E_Tetramino;
 
-
+typedef enum {
+    NONE,
+    ROTATE_CLOCKWISE,
+    ROTATE_COUNTERCLOCKWISE,
+    MOVE_LEFT,
+    MOVE_RIGHT,
+    ACCELL
+} E_Tetra_Action;
 
 /* All 28 tetramino permutations
 Stored as a 16 bit hex number for convienince 
@@ -25,10 +32,10 @@ typedef struct {
     E_Tetramino tetra_t;
     
     //offset between 0-3
-    uint8_t offset; 
-} CurrentTetramino;
+    uint8_t offset : 2; 
+} Tetramino_t;
 
 //helper function to extract data from Tetramino table
-uint16_t getTetraminoData(CurrentTetramino *t);
+uint16_t getTetraminoData(Tetramino_t *t);
 
 #endif

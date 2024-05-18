@@ -10,6 +10,6 @@ const uint16_t Tetraminos[28] = {
     0x0C60, 0x0264, 0x00C6, 0x04C8  //Z
 };  
 
-uint16_t getTetraminoData(CurrentTetramino *t){
+uint16_t getTetraminoData(Tetramino_t *t){
     return Tetraminos[(4 * t->tetra_t) + t->offset];
 }

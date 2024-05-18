@@ -20,6 +20,6 @@ extern const Color bgColor;
 void TetrisDrawPlayfield();
 void TetrisDrawNextShape();
 void TetrisDrawUI();
-void TetrisDrawTetramino(CurrentTetramino *t);
+void TetrisDrawTetramino(Tetramino_t *t);
 
 #endif
