@@ -1,9 +1,0 @@
-{
-    "files.associations": {
-        "render_util.h": "c",
-        "tetraminos.h": "c",
-        "stdio.h": "c",
-        "raylib.h": "c",
-        "game_grid.h": "c"
-    }
-}
