@@ -1,12 +1,14 @@
 #include <stdio.h>
 #include <raylib.h>
 #include "render_util.h"
-#include "tetraminos.h"
-
+// #include "tetraminos.h"
 
 
 int main(){
     printf("Hello, World!\n");
+
+
+
 
     InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "TETRIS!");
 
@@ -23,7 +25,7 @@ int main(){
 
         ClearBackground(bgColor);
 
-        //TetrisDrawPlayfield();
+        TetrisDrawPlayfield();
         TetrisDrawTetramino(&t);
         EndDrawing();
     }
